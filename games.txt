@@ -1,0 +1,40 @@
+ARTI 303 - Programming for AI
+Lab 6 - Task 2: Build and Run the Menu (games.pl)
+Student: Shahd Algharyafe
+
+Added games:
+- Running games:     4 - play with your feet  -> Football
+- Non-running games: 3 - play on a board      -> Chess
+
+------------------------------------------------------------
+
+?- consult('c:/Users/shahd/Documents/Prolog/games.pl').
+true.
+
+?- menu.
+
+Welcome to the Prolog Game Selection
+
+Please choose any number
+--------------------------
+1 - to choose running games
+2 - to choose non-running games
+3 - to exit
+
+-->> Enter option: 1.
+
+Welcome to Running Games
+-------------------------
+1 - to choose to play with bat
+2 - to choose to play with racket
+3 - to choose to play with bare hands
+4 - to choose to play with your feet
+-->> Enter option: |: 4.
+
+--( You want to play Football )--
+
+
+Do you want to go back to the main menu (yes/no)? |: no.
+
+===< End >===
+true .
