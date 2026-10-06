@@ -1,0 +1,33 @@
+ARTI 303 - Programming for AI
+Lab 6 - Task 1: Colour Matters (cars.pl)
+Student: Shahd Algharyafe
+
+New rule added: can_buy(Cost, Colour)
+It suggests only vehicles cheaper than Cost AND of the given Colour.
+The original can_buy(Cost) was kept and still works.
+
+------------------------------------------------------------
+
+?- consult('c:/Users/shahd/Documents/Prolog/cars.pl').
+true.
+
+--- Test 1: colour that exists (red) ---
+?- can_buy(150000, red).
+With 130000 you can purchase the red car chrysler
+true ;
+With 80000 you can purchase the red car datsun
+true ;
+false.
+
+--- Test 2: colour that exists (blue) ---
+?- can_buy(100000, blue).
+With 80000 you can purchase the blue truck ford
+true.
+
+--- Test 3: colour that does not exist (green) ---
+?- can_buy(200000, green).
+false.
+
+------------------------------------------------------------
+Result: the rule suggests only vehicles of the requested colour,
+and returns false when no vehicle has that colour.
